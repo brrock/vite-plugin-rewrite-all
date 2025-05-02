@@ -1,0 +1,52 @@
+{
+  "name": "@brrock/vite-plugin-rewrite-all",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "license": "MIT",
+  "author": "AlphaTr",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "spa",
+    "rewrite",
+    "history-api-fallback"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brrock/vite-plugin-rewrite-all.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brrock/vite-plugin-rewrite-all/issues"
+  },
+  "homepage": "https://github.com/brrock/vite-plugin-rewrite-all",
+  "devDependencies": {
+    "@types/connect-history-api-fallback": "^1.5.4",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.4"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^2.0.0"
+  },
+  "peerDependencies": {
+    "vite": ">=2.0.0 <7.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}
